@@ -1,0 +1,20 @@
+{
+  "name": "c-programming-ds-algo",
+  "version": "1.0.0",
+  "description": "[Notes](https://drive.google.com/drive/folders/1SEfL7Yw3nJfVLToz9MAuAm2_NoCCk1qD)👉",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo compiling... && gcc Hello.c -o hello && echo running... && .\\hello.exe"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Priyammondal/C-Programming-DS-Algo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Priyammondal/C-Programming-DS-Algo/issues"
+  },
+  "homepage": "https://github.com/Priyammondal/C-Programming-DS-Algo#readme"
+}
