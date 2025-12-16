@@ -2,6 +2,7 @@
 #include <math.h>
 
 int main()
+
 {
         // int age = 28;
         // float pi = 3.14;
