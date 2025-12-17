@@ -137,6 +137,95 @@ int main()
         //         printf("Not english letter!");
         // }
 
+        // do
+        // {
+        //         int num;
+        //         printf("Enter a number: ");
+        //         scanf("%d", &num);
+        //         printf("%d\n", num);
+        //         if (num % 2 != 0)
+        //                 break;
+        //         printf("You entered even number, try again!\n");
+        // } while (1);
+        // printf("You entered odd number, exiting loop!");
+
+        // for (int i = 1; i <= 3; i++)
+        // {
+        //         for (int j = 1; j <= 3; j++)
+        //         {
+        //                 if (j == 2)
+        //                 {
+        //                         break;
+        //                 }
+        //                 printf("i=%d j=%d\n", i, j);
+        //         }
+        // }
+
+        // continue → skips current iteration of the current loop
+        // break → exits current loop
+
+        //         int grid[3][3] = {
+        //             {1, 2, 3},
+        //             {4, 5, 6},
+        //             {7, 8, 9}};
+
+        //         for (int row = 0; row < 3; row++)
+        //         {
+        //                 for (int col = 0; col < 3; col++)
+        //                 {
+
+        //                         printf("Checking grid[%d][%d] = %d\n",
+        //                                row, col, grid[row][col]);
+
+        //                         if (grid[row][col] == 5)
+        //                         {
+        //                                 printf("FOUND 5! Exiting all loops...\n");
+        //                                 goto end_search;
+        //                         }
+        //                 }
+        //         }
+
+        // end_search:
+        //         printf("Search finished.\n");
+
+        // Q) Print all numbers from 1 to 10 except 6
+        // int num = 1;
+        // while (num <= 10)
+        // {
+        //         if (num == 6)
+        //         {
+        //                 num++;
+        //                 continue;
+        //         }
+        //         printf("%d ", num);
+        //         num++;
+        // }
+
+        // Q) Print all the odd numbers from 5 to 50
+        // for (int i = 5; i <= 50; i++)
+        // {
+        //         if (i % 2 == 0)
+        //                 continue;
+        //         printf("%d ", i);
+        // }
+
+        // Q) Print the factorial of a number entered by user
+        // int num, factorial = 1;
+        // printf("Enter a number: ");
+        // scanf("%d", &num);
+        // for (int i = num; i >= 1; i--)
+        // {
+        //         factorial *= i;
+        // }
+        // printf("Factorial of %d is %d", num, factorial);
+
+        // Q) Print reverse of the table for number n
+        int num = 12;
+        for (int i = 10; i >= 1; i--)
+        {
+                printf("%d X %d = %d\n", num, i, num * i);
+        }
+
         printf("\n");
         return 0; // return 0 for success or zeror error, return 1 for error
 }
