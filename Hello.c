@@ -1,8 +1,11 @@
 #include <stdio.h> //preprocessor directive
 #include <math.h>
 
-int main()
+void printHello(); // function declaration/prototype
+void greetings(char nationality);
+int sum(int x, int y);
 
+int main()
 {
         // int age = 28;
         // float pi = 3.14;
@@ -220,12 +223,58 @@ int main()
         // printf("Factorial of %d is %d", num, factorial);
 
         // Q) Print reverse of the table for number n
-        int num = 12;
-        for (int i = 10; i >= 1; i--)
-        {
-                printf("%d X %d = %d\n", num, i, num * i);
-        }
+        // int num = 12;
+        // for (int i = 10; i >= 1; i--)
+        // {
+        //         printf("%d X %d = %d\n", num, i, num * i);
+        // }
+
+        // printHello(); // function call
+
+        // Q) Write a function to print Namaste if user is Indian and Bonjour if user is French
+        // char nationality;
+        // printf("Enter 'I' for Indian and 'F' for French: ");
+        // scanf("%c", &nationality);
+        // greetings(nationality);
+
+        int a, b;
+        printf("Enter first number: ");
+        scanf("%d", &a);
+        printf("Enter second number: ");
+        scanf("%d", &b);
+
+        int c = sum(a, b); // passing arguments/actual parameters
+        printf("Sum of %d & %d is %d", a, b, c);
 
         printf("\n");
         return 0; // return 0 for success or zeror error, return 1 for error
 }
+
+// function definition
+void printHello()
+{
+        printf("Hello\n");
+};
+
+int sum(int x, int y) // parameters/formal parameters
+// x and y are the copied values of a and b, so any changes to x and y won't affect a and b
+{
+        return x + y;
+}
+
+void greetings(char nationality)
+{
+        switch (nationality)
+        {
+        case 'I':
+        case 'i':
+                printf("Namaste 🙏");
+                break;
+        case 'F':
+        case 'f':
+                printf("Bonjour!");
+                break;
+        default:
+                printf("Invalid Input!");
+        }
+};
