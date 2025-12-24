@@ -1,5 +1,6 @@
 // Strings -> A character array terminated by a null character ('\0') used to represent text in C.
 #include <stdio.h>
+#include <string.h>
 
 void printString(char str[]);
 int countLength(char arr[]);
@@ -33,10 +34,38 @@ int main()
     // puts(charCannotChange);
     // charCannotChange = 'Belarus'; // Error: Attempting to modify
 
-    char name[100];
-    printf("Enter you name: ");
-    fgets(name, 100, stdin);
-    printf("Length of you name is %d\n", countLength(name));
+    // char name[100];
+    // printf("Enter you name: ");
+    // fgets(name, 100, stdin);
+    // printf("Length of you name is %d\n", countLength(name));
+    // int length = strlen("Priyam");
+    // printf("Length using strlen function: %d\n", length);
+
+    // char oldString[] = "Hello, World!";
+    // char newString[] = "Goodbye, World!";
+    // strcpy(oldString, newString); // Copy newString into oldString
+    // printf("After copying, oldString: %s\n", oldString);
+
+    // char string1[] = "Apple ";
+    // char string2[] = "Banana";
+    // strcat(string1, string2); // Concatenate string2 to the end of string1
+    // printf("After concatenation, string1: %s\n", string1);
+
+    char stringA[] = "Apple";
+    char stringB[] = "Banana";
+    int result = strcmp(stringA, stringB);
+    if (result < 0)
+    {
+        printf("%s comes before %s\n", stringA, stringB);
+    }
+    else if (result > 0)
+    {
+        printf("%s comes after %s\n", stringA, stringB);
+    }
+    else
+    {
+        printf("%s is equal to %s\n", stringA, stringB);
+    }
 
     return 0;
 }
